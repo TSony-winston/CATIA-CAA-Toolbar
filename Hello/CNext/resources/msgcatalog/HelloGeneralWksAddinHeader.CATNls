@@ -1,0 +1,24 @@
+// COPYRIGHT Dassault Systemes 2026
+
+//===========================================================================
+// Message catalog for the HelloGeneralWksAddinHeader command headers of the
+// general workshop addin.
+//===========================================================================
+
+HelloGeneralWksAddinHeader.InitMessageHdr.Category  = "Test" ;
+HelloGeneralWksAddinHeader.InitMessageHdr.Title     = "Hello Message" ;
+HelloGeneralWksAddinHeader.InitMessageHdr.ShortHelp = "Display Hello World message" ;
+HelloGeneralWksAddinHeader.InitMessageHdr.Help      = "Display a Hello World message box" ;
+HelloGeneralWksAddinHeader.InitMessageHdr.LongHelp  = "Hello Message\nThis command displays the Hello World message box." ;
+
+HelloGeneralWksAddinHeader.Create3DCommandHdr.Category  = "Test" ;
+HelloGeneralWksAddinHeader.Create3DCommandHdr.Title     = "Create 3D" ;
+HelloGeneralWksAddinHeader.Create3DCommandHdr.ShortHelp = "Create a CATPart" ;
+HelloGeneralWksAddinHeader.Create3DCommandHdr.Help      = "Create a CATPart document" ;
+HelloGeneralWksAddinHeader.Create3DCommandHdr.LongHelp  = "Create 3D\nThis command creates a CATPart document." ;
+
+HelloGeneralWksAddinHeader.Project3DCommandHdr.Category  = "Test" ;
+HelloGeneralWksAddinHeader.Project3DCommandHdr.Title     = "Project 3D" ;
+HelloGeneralWksAddinHeader.Project3DCommandHdr.ShortHelp = "Project 3D into drawing" ;
+HelloGeneralWksAddinHeader.Project3DCommandHdr.Help      = "Project the active 3D view into a drawing" ;
+HelloGeneralWksAddinHeader.Project3DCommandHdr.LongHelp  = "Project 3D\nThis command creates a generative drawing view from the active 3D view." ;

@@ -1,0 +1,10 @@
+// COPYRIGHT Dassault Systemes 2026
+
+//===========================================================================
+// Resource catalog for the HelloGeneralWksAddinHeader command headers of the
+// General workshop addin
+//===========================================================================
+
+HelloGeneralWksAddinHeader.InitMessageHdr.Icon.Normal    = "I_HelloMessage" ;
+HelloGeneralWksAddinHeader.Create3DCommandHdr.Icon.Normal = "I_HelloMessage" ;
+HelloGeneralWksAddinHeader.Project3DCommandHdr.Icon.Normal = "I_HelloMessage" ;

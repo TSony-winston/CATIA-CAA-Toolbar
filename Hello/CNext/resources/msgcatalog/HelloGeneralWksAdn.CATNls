@@ -1,0 +1,12 @@
+// COPYRIGHT Dassault Systemes 2026
+
+//===========================================================================
+// Message catalog for the HelloGeneralWksAddin Addin of the
+// General workshop
+//===========================================================================
+
+//----------------------------------------------------------------------------
+// TOOLBAR
+//----------------------------------------------------------------------------
+HelloGeneralWksTlb.Title   = "Hello Toolbar" ;
+ThreeDToolsTlb.Title       = "3D Tools" ;

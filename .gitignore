@@ -1,0 +1,35 @@
+# Build artifacts
+win_b64/
+.build-exit-code
+*.log
+rade_*.log
+
+# Machine-specific files
+.deploy-state.json
+Install_config_win_b64
+CATIAV5Level.h
+CATIAV5Level.lvl
+.system-dictionary-backup
+
+# IDE/Editor
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+*.tx
+*.pdb
+*.dll
+*.suo
+*.ncb
+
+
+# Windows
+Thumbs.db
+desktop.ini
+*.obj
+*.exp
+*.lib
