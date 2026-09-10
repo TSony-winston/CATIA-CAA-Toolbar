@@ -1,0 +1,64 @@
+mkmk  -u  TestModule.m
+9/6/2026 9:16:22 AM
+
+## start step: CIbuild   at 09/06/2026-09:16:23
+## end   step: CIbuild   at 09/06/2026-09:16:23
+
+## start step: DataUpdate   at 09/06/2026-09:16:23
+# make:  Hello\IdentityCard\Objects\win_b64\.mkdata.mkb
+## end   step: DataUpdate   at 09/06/2026-09:16:23
+
+## start step: DataUpdate   at 09/06/2026-09:16:23
+# make:  Hello\TestModule.m\Objects\win_b64\.mkdata.mkb
+## end   step: DataUpdate   at 09/06/2026-09:16:23
+
+## start step: CIcompilation   at 09/06/2026-09:16:23
+## end   step: CIcompilation   at 09/06/2026-09:16:23
+
+## start step: headerlist   at 09/06/2026-09:16:23
+## end   step: headerlist   at 09/06/2026-09:16:23
+
+## start step: headermap   at 09/06/2026-09:16:23
+## end   step: headermap   at 09/06/2026-09:16:23
+
+## start step: buildtimedata   at 09/06/2026-09:16:23
+## end   step: buildtimedata   at 09/06/2026-09:16:23
+
+## start step: fwgrammar   at 09/06/2026-09:16:23
+## end   step: fwgrammar   at 09/06/2026-09:16:23
+
+## start step: cppgrammar   at 09/06/2026-09:16:23
+## end   step: cppgrammar   at 09/06/2026-09:16:23
+
+## start step: headerlist   at 09/06/2026-09:16:23
+## end   step: headerlist   at 09/06/2026-09:16:23
+
+## start step: headermap   at 09/06/2026-09:16:23
+## end   step: headermap   at 09/06/2026-09:16:23
+
+## start step: grammar1st   at 09/06/2026-09:16:23
+## end   step: grammar1st   at 09/06/2026-09:16:23
+
+## start step: typelibgrammar   at 09/06/2026-09:16:23
+## end   step: typelibgrammar   at 09/06/2026-09:16:23
+
+## start step: headerruler   at 09/06/2026-09:16:23
+## end   step: headerruler   at 09/06/2026-09:16:23
+
+## start step: compilation   at 09/06/2026-09:16:23
+## end   step: compilation   at 09/06/2026-09:16:23
+
+## start step: sourceruler   at 09/06/2026-09:16:23
+## end   step: sourceruler   at 09/06/2026-09:16:23
+
+## start step: link1st   at 09/06/2026-09:16:23
+## end   step: link1st   at 09/06/2026-09:16:23
+
+## start step: link2nd   at 09/06/2026-09:16:23
+## end   step: link2nd   at 09/06/2026-09:16:23
+
+## start step: runtimedata   at 09/06/2026-09:16:23
+## end   step: runtimedata   at 09/06/2026-09:16:23
+
+## start step: dummynls   at 09/06/2026-09:16:23
+## end   step: dummynls   at 09/06/2026-09:16:23

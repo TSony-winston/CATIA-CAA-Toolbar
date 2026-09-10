@@ -1,0 +1,82 @@
+mkmk  -u  TestModule.m
+9/7/2026 6:17:14 AM
+
+## start step: CIbuild   at 09/07/2026-06:17:15
+## end   step: CIbuild   at 09/07/2026-06:17:15
+
+## start step: DataUpdate   at 09/07/2026-06:17:15
+# make:  Hello\IdentityCard\Objects\win_b64\.mkdata.mkb
+## end   step: DataUpdate   at 09/07/2026-06:17:15
+
+## start step: DataUpdate   at 09/07/2026-06:17:15
+# make:  Hello\TestModule.m\Objects\win_b64\.mkdata.mkb
+## end   step: DataUpdate   at 09/07/2026-06:17:15
+
+## start step: CIcompilation   at 09/07/2026-06:17:15
+## end   step: CIcompilation   at 09/07/2026-06:17:15
+
+## start step: headerlist   at 09/07/2026-06:17:15
+## end   step: headerlist   at 09/07/2026-06:17:15
+
+## start step: headermap   at 09/07/2026-06:17:15
+## end   step: headermap   at 09/07/2026-06:17:15
+
+## start step: buildtimedata   at 09/07/2026-06:17:15
+## end   step: buildtimedata   at 09/07/2026-06:17:15
+
+## start step: fwgrammar   at 09/07/2026-06:17:15
+## end   step: fwgrammar   at 09/07/2026-06:17:15
+
+## start step: cppgrammar   at 09/07/2026-06:17:15
+## end   step: cppgrammar   at 09/07/2026-06:17:15
+
+## start step: headerlist   at 09/07/2026-06:17:15
+## end   step: headerlist   at 09/07/2026-06:17:15
+
+## start step: headermap   at 09/07/2026-06:17:15
+## end   step: headermap   at 09/07/2026-06:17:15
+
+## start step: grammar1st   at 09/07/2026-06:17:15
+## end   step: grammar1st   at 09/07/2026-06:17:15
+
+## start step: typelibgrammar   at 09/07/2026-06:17:15
+## end   step: typelibgrammar   at 09/07/2026-06:17:15
+
+## start step: headerruler   at 09/07/2026-06:17:15
+## end   step: headerruler   at 09/07/2026-06:17:15
+
+## start step: compilation   at 09/07/2026-06:17:15
+# make:  Hello\TestModule.m: creates the precompiled header
+mkmksourceforpch.cpp
+# make:  Hello\TestModule.m\src\HelloGeneralWksAddin.cpp
+HelloGeneralWksAddin.cpp
+# make:  Hello\TestModule.m\src\InitMessage.cpp
+InitMessage.cpp
+E:\Workshop\Catia_Caa_Test\Hello\TestModule.m\src\InitMessage.cpp(35) : error C2039: 'GetApplication' : is not a member of 'CATApplication'
+        C:\Program Files\Dassault Systemes\B21\.\System\PublicInterfaces\CATApplication.h(38) : see declaration of 'CATApplication'
+E:\Workshop\Catia_Caa_Test\Hello\TestModule.m\src\InitMessage.cpp(35) : error C3861: 'GetApplication': identifier not found
+# make-ERROR: Hello\TestModule.m\src\InitMessage.cpp
+# make:  tools\data\mkmksourceforpch.cpp
+## end   step: compilation   at 09/07/2026-06:17:16
+
+## start step: sourceruler   at 09/07/2026-06:17:16
+## end   step: sourceruler   at 09/07/2026-06:17:16
+
+## start step: link1st   at 09/07/2026-06:17:16
+# make: Hello\TestModule.m win_b64\code\lib\TestModule.lib
+# syst-ERROR: [E:\Workshop\Catia_Caa_Test\.\Hello\TestModule.m\Objects\win_b64\InitMessage.obj]: No such file or directory
+# make-ERROR: win_b64\code\lib\TestModule.lib
+## end   step: link1st   at 09/07/2026-06:17:16
+
+## start step: link2nd   at 09/07/2026-06:17:16
+# make: Hello\TestModule.m win_b64\code\bin\TestModule.dll
+# syst-ERROR: [E:\Workshop\Catia_Caa_Test\.\Hello\TestModule.m\Objects\win_b64\InitMessage.obj]: No such file or directory
+# syst-ERROR: [E:\Workshop\Catia_Caa_Test\.\win_b64\code\lib\TestModule.exp]: No such file or directory
+# make-ERROR: win_b64\code\bin\TestModule.dll
+## end   step: link2nd   at 09/07/2026-06:17:16
+
+## start step: runtimedata   at 09/07/2026-06:17:16
+## end   step: runtimedata   at 09/07/2026-06:17:16
+
+## start step: dummynls   at 09/07/2026-06:17:16
+## end   step: dummynls   at 09/07/2026-06:17:16

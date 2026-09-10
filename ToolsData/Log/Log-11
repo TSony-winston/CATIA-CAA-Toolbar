@@ -1,0 +1,81 @@
+mkmk  -u  TestModule.m
+9/6/2026 8:41:35 AM
+
+## start step: CIbuild   at 09/06/2026-08:41:36
+## end   step: CIbuild   at 09/06/2026-08:41:36
+
+## start step: DataUpdate   at 09/06/2026-08:41:36
+# make:  Hello\IdentityCard\Objects\win_b64\.mkdata.mkb
+## end   step: DataUpdate   at 09/06/2026-08:41:36
+
+## start step: DataUpdate   at 09/06/2026-08:41:36
+# make:  Hello\TestModule.m\Objects\win_b64\.mkdata.mkb
+## end   step: DataUpdate   at 09/06/2026-08:41:36
+
+## start step: CIcompilation   at 09/06/2026-08:41:36
+## end   step: CIcompilation   at 09/06/2026-08:41:36
+
+## start step: headerlist   at 09/06/2026-08:41:36
+## end   step: headerlist   at 09/06/2026-08:41:36
+
+## start step: headermap   at 09/06/2026-08:41:36
+## end   step: headermap   at 09/06/2026-08:41:36
+
+## start step: buildtimedata   at 09/06/2026-08:41:36
+## end   step: buildtimedata   at 09/06/2026-08:41:36
+
+## start step: fwgrammar   at 09/06/2026-08:41:36
+## end   step: fwgrammar   at 09/06/2026-08:41:36
+
+## start step: cppgrammar   at 09/06/2026-08:41:36
+## end   step: cppgrammar   at 09/06/2026-08:41:36
+
+## start step: headerlist   at 09/06/2026-08:41:36
+## end   step: headerlist   at 09/06/2026-08:41:36
+
+## start step: headermap   at 09/06/2026-08:41:36
+## end   step: headermap   at 09/06/2026-08:41:36
+
+## start step: grammar1st   at 09/06/2026-08:41:36
+## end   step: grammar1st   at 09/06/2026-08:41:37
+
+## start step: typelibgrammar   at 09/06/2026-08:41:37
+## end   step: typelibgrammar   at 09/06/2026-08:41:37
+
+## start step: headerruler   at 09/06/2026-08:41:37
+## end   step: headerruler   at 09/06/2026-08:41:37
+
+## start step: compilation   at 09/06/2026-08:41:37
+# make:  Hello\TestModule.m: creates the precompiled header
+mkmksourceforpch.cpp
+# make:  Hello\TestModule.m\src\InitMessage.cpp
+InitMessage.cpp
+E:\Workshop\Catia_Caa_Test\Hello\TestModule.m\src\InitMessage.cpp(41) : error C2668: 'CATDlgNotify::CATDlgNotify' : ambiguous call to overloaded function
+        C:\Program Files\Dassault Systemes\B21\.\Dialog\PublicInterfaces\CATDlgNotify.h(83): could be 'CATDlgNotify::CATDlgNotify(CATInteractiveApplication *,const CATString &,CATDlgStyle)'
+        C:\Program Files\Dassault Systemes\B21\.\Dialog\PublicInterfaces\CATDlgNotify.h(56): or       'CATDlgNotify::CATDlgNotify(CATDialog *,const CATString &,CATDlgStyle)'
+        while trying to match the argument list '(int, const char [12], int)'
+# make-ERROR: Hello\TestModule.m\src\InitMessage.cpp
+# make:  tools\data\mkmksourceforpch.cpp
+## end   step: compilation   at 09/06/2026-08:41:37
+
+## start step: sourceruler   at 09/06/2026-08:41:37
+## end   step: sourceruler   at 09/06/2026-08:41:37
+
+## start step: link1st   at 09/06/2026-08:41:37
+# make: Hello\TestModule.m win_b64\code\lib\TestModule.lib
+## end   step: link1st   at 09/06/2026-08:41:37
+
+## start step: link2nd   at 09/06/2026-08:41:37
+# syst-ERROR: [E:\Workshop\Catia_Caa_Test\.\Hello\TestModule.m\Objects\win_b64\InitMessage.obj]: No such file or directory
+# make-ERROR: win_b64\code\lib\TestModule.lib
+# make: Hello\TestModule.m win_b64\code\bin\TestModule.dll
+# syst-ERROR: [E:\Workshop\Catia_Caa_Test\.\Hello\TestModule.m\Objects\win_b64\InitMessage.obj]: No such file or directory
+# syst-ERROR: [E:\Workshop\Catia_Caa_Test\.\win_b64\code\lib\TestModule.exp]: No such file or directory
+# make-ERROR: win_b64\code\bin\TestModule.dll
+## end   step: link2nd   at 09/06/2026-08:41:37
+
+## start step: runtimedata   at 09/06/2026-08:41:37
+## end   step: runtimedata   at 09/06/2026-08:41:37
+
+## start step: dummynls   at 09/06/2026-08:41:37
+## end   step: dummynls   at 09/06/2026-08:41:37

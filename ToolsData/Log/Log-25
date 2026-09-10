@@ -1,0 +1,72 @@
+mkmk  -u  TestModule.m
+9/6/2026 8:34:41 PM
+
+## start step: CIbuild   at 09/06/2026-20:34:42
+## end   step: CIbuild   at 09/06/2026-20:34:43
+
+## start step: DataUpdate   at 09/06/2026-20:34:43
+# make:  Hello\IdentityCard\Objects\win_b64\.mkdata.mkb
+## end   step: DataUpdate   at 09/06/2026-20:34:43
+
+## start step: DataUpdate   at 09/06/2026-20:34:43
+# make:  Hello\TestModule.m\Objects\win_b64\.mkdata.mkb
+## end   step: DataUpdate   at 09/06/2026-20:34:43
+
+## start step: CIcompilation   at 09/06/2026-20:34:43
+## end   step: CIcompilation   at 09/06/2026-20:34:43
+
+## start step: headerlist   at 09/06/2026-20:34:43
+## end   step: headerlist   at 09/06/2026-20:34:43
+
+## start step: headermap   at 09/06/2026-20:34:43
+## end   step: headermap   at 09/06/2026-20:34:43
+
+## start step: buildtimedata   at 09/06/2026-20:34:43
+## end   step: buildtimedata   at 09/06/2026-20:34:43
+
+## start step: fwgrammar   at 09/06/2026-20:34:43
+## end   step: fwgrammar   at 09/06/2026-20:34:43
+
+## start step: cppgrammar   at 09/06/2026-20:34:43
+## end   step: cppgrammar   at 09/06/2026-20:34:43
+
+## start step: headerlist   at 09/06/2026-20:34:43
+## end   step: headerlist   at 09/06/2026-20:34:43
+
+## start step: headermap   at 09/06/2026-20:34:43
+## end   step: headermap   at 09/06/2026-20:34:43
+
+## start step: grammar1st   at 09/06/2026-20:34:43
+## end   step: grammar1st   at 09/06/2026-20:34:43
+
+## start step: typelibgrammar   at 09/06/2026-20:34:43
+## end   step: typelibgrammar   at 09/06/2026-20:34:43
+
+## start step: headerruler   at 09/06/2026-20:34:43
+## end   step: headerruler   at 09/06/2026-20:34:43
+
+## start step: compilation   at 09/06/2026-20:34:43
+# make:  Hello\TestModule.m: creates the precompiled header
+mkmksourceforpch.cpp
+# make:  Hello\TestModule.m\src\InitMessage.cpp
+InitMessage.cpp
+# make:  tools\data\mkmksourceforpch.cpp
+## end   step: compilation   at 09/06/2026-20:34:45
+
+## start step: sourceruler   at 09/06/2026-20:34:45
+## end   step: sourceruler   at 09/06/2026-20:34:45
+
+## start step: link1st   at 09/06/2026-20:34:45
+# make: Hello\TestModule.m win_b64\code\lib\TestModule.lib
+   Creating library E:\Workshop\Catia_Caa_Test\.\win_b64\code\lib\TestModule.lib and object E:\Workshop\Catia_Caa_Test\.\win_b64\code\lib\TestModule.exp
+## end   step: link1st   at 09/06/2026-20:34:45
+
+## start step: link2nd   at 09/06/2026-20:34:45
+# make: Hello\TestModule.m win_b64\code\bin\TestModule.dll
+## end   step: link2nd   at 09/06/2026-20:34:45
+
+## start step: runtimedata   at 09/06/2026-20:34:45
+## end   step: runtimedata   at 09/06/2026-20:34:45
+
+## start step: dummynls   at 09/06/2026-20:34:45
+## end   step: dummynls   at 09/06/2026-20:34:45

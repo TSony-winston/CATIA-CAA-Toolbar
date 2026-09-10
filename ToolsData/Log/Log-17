@@ -1,0 +1,53 @@
+mkmk -noci -nomk
+9/6/2026 9:13:09 AM
+
+## start step: CIcompilation   at 09/06/2026-09:13:10
+## end   step: CIcompilation   at 09/06/2026-09:13:10
+
+## start step: headerlist   at 09/06/2026-09:13:10
+## end   step: headerlist   at 09/06/2026-09:13:10
+
+## start step: headermap   at 09/06/2026-09:13:10
+## end   step: headermap   at 09/06/2026-09:13:10
+
+## start step: buildtimedata   at 09/06/2026-09:13:10
+## end   step: buildtimedata   at 09/06/2026-09:13:10
+
+## start step: fwgrammar   at 09/06/2026-09:13:10
+## end   step: fwgrammar   at 09/06/2026-09:13:10
+
+## start step: cppgrammar   at 09/06/2026-09:13:10
+## end   step: cppgrammar   at 09/06/2026-09:13:10
+
+## start step: headerlist   at 09/06/2026-09:13:10
+## end   step: headerlist   at 09/06/2026-09:13:10
+
+## start step: headermap   at 09/06/2026-09:13:10
+## end   step: headermap   at 09/06/2026-09:13:10
+
+## start step: grammar1st   at 09/06/2026-09:13:10
+## end   step: grammar1st   at 09/06/2026-09:13:10
+
+## start step: typelibgrammar   at 09/06/2026-09:13:10
+## end   step: typelibgrammar   at 09/06/2026-09:13:10
+
+## start step: headerruler   at 09/06/2026-09:13:10
+## end   step: headerruler   at 09/06/2026-09:13:10
+
+## start step: compilation   at 09/06/2026-09:13:10
+## end   step: compilation   at 09/06/2026-09:13:10
+
+## start step: sourceruler   at 09/06/2026-09:13:10
+## end   step: sourceruler   at 09/06/2026-09:13:10
+
+## start step: link1st   at 09/06/2026-09:13:10
+## end   step: link1st   at 09/06/2026-09:13:10
+
+## start step: link2nd   at 09/06/2026-09:13:10
+## end   step: link2nd   at 09/06/2026-09:13:10
+
+## start step: runtimedata   at 09/06/2026-09:13:10
+## end   step: runtimedata   at 09/06/2026-09:13:10
+
+## start step: dummynls   at 09/06/2026-09:13:10
+## end   step: dummynls   at 09/06/2026-09:13:10

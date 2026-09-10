@@ -1,0 +1,9 @@
+mkcpl InitMessage.cpp
+9/6/2026 8:35:25 PM
+# mkmk-ERROR: InitMessage: Directory [InitMessage.m*] was not found in specified workspace(s), then module [InitMessage] does not exist.
+
+## start step: headerlist   at 09/06/2026-20:35:26
+## end   step: headerlist   at 09/06/2026-20:35:26
+
+## start step: headermap   at 09/06/2026-20:35:26
+## end   step: headermap   at 09/06/2026-20:35:26

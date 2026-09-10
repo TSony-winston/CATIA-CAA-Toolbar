@@ -1,0 +1,67 @@
+mkmk  -u  TestModule.m
+9/6/2026 9:12:29 AM
+
+## start step: CIbuild   at 09/06/2026-09:12:30
+## end   step: CIbuild   at 09/06/2026-09:12:30
+
+## start step: DataUpdate   at 09/06/2026-09:12:30
+# make:  Hello\IdentityCard\Objects\win_b64\.mkdata.mkb
+## end   step: DataUpdate   at 09/06/2026-09:12:30
+
+## start step: DataUpdate   at 09/06/2026-09:12:30
+# make:  Hello\TestModule.m\Objects\win_b64\.mkdata.mkb
+## end   step: DataUpdate   at 09/06/2026-09:12:30
+
+## start step: CIcompilation   at 09/06/2026-09:12:30
+## end   step: CIcompilation   at 09/06/2026-09:12:30
+
+## start step: headerlist   at 09/06/2026-09:12:30
+## end   step: headerlist   at 09/06/2026-09:12:30
+
+## start step: headermap   at 09/06/2026-09:12:30
+## end   step: headermap   at 09/06/2026-09:12:30
+
+## start step: buildtimedata   at 09/06/2026-09:12:30
+## end   step: buildtimedata   at 09/06/2026-09:12:30
+
+## start step: fwgrammar   at 09/06/2026-09:12:30
+## end   step: fwgrammar   at 09/06/2026-09:12:30
+
+## start step: cppgrammar   at 09/06/2026-09:12:30
+## end   step: cppgrammar   at 09/06/2026-09:12:30
+
+## start step: headerlist   at 09/06/2026-09:12:30
+## end   step: headerlist   at 09/06/2026-09:12:30
+
+## start step: headermap   at 09/06/2026-09:12:30
+## end   step: headermap   at 09/06/2026-09:12:30
+
+## start step: grammar1st   at 09/06/2026-09:12:30
+## end   step: grammar1st   at 09/06/2026-09:12:30
+
+## start step: typelibgrammar   at 09/06/2026-09:12:30
+## end   step: typelibgrammar   at 09/06/2026-09:12:30
+
+## start step: headerruler   at 09/06/2026-09:12:30
+## end   step: headerruler   at 09/06/2026-09:12:30
+
+## start step: compilation   at 09/06/2026-09:12:30
+## end   step: compilation   at 09/06/2026-09:12:30
+
+## start step: sourceruler   at 09/06/2026-09:12:30
+## end   step: sourceruler   at 09/06/2026-09:12:30
+
+## start step: link1st   at 09/06/2026-09:12:30
+# make: Hello\TestModule.m win_b64\code\lib\TestModule.lib
+   Creating library E:\Workshop\Catia_Caa_Test\.\win_b64\code\lib\TestModule.lib and object E:\Workshop\Catia_Caa_Test\.\win_b64\code\lib\TestModule.exp
+## end   step: link1st   at 09/06/2026-09:12:30
+
+## start step: link2nd   at 09/06/2026-09:12:30
+# make: Hello\TestModule.m win_b64\code\bin\TestModule.dll
+## end   step: link2nd   at 09/06/2026-09:12:30
+
+## start step: runtimedata   at 09/06/2026-09:12:30
+## end   step: runtimedata   at 09/06/2026-09:12:30
+
+## start step: dummynls   at 09/06/2026-09:12:30
+## end   step: dummynls   at 09/06/2026-09:12:30

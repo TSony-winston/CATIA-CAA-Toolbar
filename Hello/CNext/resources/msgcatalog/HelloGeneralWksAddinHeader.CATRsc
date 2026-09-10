@@ -5,6 +5,6 @@
 // General workshop addin
 //===========================================================================
 
-HelloGeneralWksAddinHeader.InitMessageHdr.Icon.Normal    = "I_HelloMessage" ;
-HelloGeneralWksAddinHeader.Create3DCommandHdr.Icon.Normal = "I_HelloMessage" ;
-HelloGeneralWksAddinHeader.Project3DCommandHdr.Icon.Normal = "I_HelloMessage" ;
+HelloGeneralWksAddinHeader.InitMessageHdr.Icon.Normal    = "I_HelloMessage";
+HelloGeneralWksAddinHeader.Create3DCommandHdr.Icon.Normal = "Create3D_23x23";
+HelloGeneralWksAddinHeader.Project3DCommandHdr.Icon.Normal = "Project3D_23x23";

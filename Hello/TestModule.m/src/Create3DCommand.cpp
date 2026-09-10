@@ -50,6 +50,7 @@ HRESULT CreateBox(CATDocument* iPartDocument) {
     if (pPartContainer == NULL) {
         return E_FAIL;
     }
+    // I have to add for defining work place.
 
     CATISketchFactory_var        sketchFactory   = pPartContainer;
     CATIPrtPart_var              part            = pPartContainer->GetPart();
