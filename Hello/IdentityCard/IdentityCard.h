@@ -24,3 +24,7 @@ AddPrereqComponent("ObjectModelerBase", Public);
 AddPrereqComponent("PartInterfaces", Public);
 AddPrereqComponent("SketcherInterfaces", Public);
 AddPrereqComponent("MecModInterfaces", Public);
+AddPrereqComponent("Visualization", Public);
+AddPrereqComponent("ObjectModelerNavigator", Public);
+AddPrereqComponent("Mathematics", Public);
+AddPrereqComponent("InfInterfaces", Public);

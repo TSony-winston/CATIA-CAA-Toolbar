@@ -15,7 +15,7 @@ WIZARD_LINK_MODULES = JS0GROUP \
 JS0GROUP JS0FM
 # END WIZARD EDITION ZONE
 
-LINK_WITH = CATApplicationFrame CATObjectModelerBase AC0SPBAS DraftingItfCPP CATPartInterfaces CATSketcherInterfaces CATMecModInterfaces $(WIZARD_LINK_MODULES) DI0PANV2
+LINK_WITH = DraftingPubIDL CATInfInterfaces CATMathematics CATVisualization CATOmnMain CATProductStructure1 CATApplicationFrame CATObjectModelerBase AC0SPBAS DraftingItfCPP CATPartInterfaces CATSketcherInterfaces CATMecModInterfaces $(WIZARD_LINK_MODULES) DI0PANV2
 
 # System dependant variables
 #

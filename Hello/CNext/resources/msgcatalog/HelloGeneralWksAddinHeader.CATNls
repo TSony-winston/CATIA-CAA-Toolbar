@@ -13,9 +13,9 @@ HelloGeneralWksAddinHeader.InitMessageHdr.LongHelp  = "Hello Message\nThis comma
 
 HelloGeneralWksAddinHeader.Create3DCommandHdr.Category  = "Test" ;
 HelloGeneralWksAddinHeader.Create3DCommandHdr.Title     = "Create 3D" ;
-HelloGeneralWksAddinHeader.Create3DCommandHdr.ShortHelp = "Create a CATPart" ;
-HelloGeneralWksAddinHeader.Create3DCommandHdr.Help      = "Create a CATPart document" ;
-HelloGeneralWksAddinHeader.Create3DCommandHdr.LongHelp  = "Create 3D\nThis command creates a CATPart document." ;
+HelloGeneralWksAddinHeader.Create3DCommandHdr.ShortHelp = "Add a box part to the active product" ;
+HelloGeneralWksAddinHeader.Create3DCommandHdr.Help      = "Create a box CATPart inside the active CATProduct" ;
+HelloGeneralWksAddinHeader.Create3DCommandHdr.LongHelp  = "Create 3D\nThis command adds a box CATPart to the active CATProduct." ;
 
 HelloGeneralWksAddinHeader.Project3DCommandHdr.Category  = "Test" ;
 HelloGeneralWksAddinHeader.Project3DCommandHdr.Title     = "Project 3D" ;

@@ -4,6 +4,13 @@
 #include "CATDlgNotify.h"
 #include "CATDocument.h"
 #include "CATDocumentServices.h"
+#include "CATIDocRoots.h"
+#include "CATIDocId.h"
+#include "CATIProduct.h"
+#include "CATIModelEvents.h"
+#include "CATCreate.h"
+#include "CATIRedrawEvent.h"
+#include "CATFrmEditor.h"
 #include "CATInit.h"
 #include "CATIPrtContainer.h"
 #include "CATIPrtPart.h"
@@ -35,6 +42,24 @@ void ShowCreate3DMessage(const char* iMessage) {
         pNotify->DisplayBlocked(iMessage, "CATIA CAA Test");
         pNotify->RequestDelayedDestruction();
     }
+}
+
+CATIProduct_var GetRootProduct(CATDocument* iDocument) {
+    CATIProduct_var rootProduct = NULL_var;
+    CATIDocRoots*   pDocRoots   = NULL;
+    if (iDocument != NULL &&
+        SUCCEEDED(iDocument->QueryInterface(IID_CATIDocRoots, (void**)&pDocRoots)) &&
+        pDocRoots != NULL) {
+        CATListValCATBaseUnknown_var* pRoots = pDocRoots->GiveDocRoots();
+        if (pRoots != NULL) {
+            if (pRoots->Size() > 0) {
+                rootProduct = (*pRoots)[ 1 ];
+            }
+            delete pRoots;
+        }
+        pDocRoots->Release();
+    }
+    return rootProduct;
 }
 
 HRESULT CreateBox(CATDocument* iPartDocument) {
@@ -109,8 +134,43 @@ CATDocument* Create3DCommand::GetCreatedPart() {
 }
 
 CATStatusChangeRC Create3DCommand::Activate(CATCommand* iFromClient, CATNotification* iEvent) {
+    CATFrmEditor* pEditor   = CATFrmEditor::GetCurrentEditor();
+    CATDocument*  pAssembly = pEditor == NULL ? NULL : pEditor->GetDocument();
+    if (pAssembly == NULL) {
+        ShowCreate3DMessage("Open a CATProduct document before creating a part.");
+        return CATStatusChangeRCCompleted;
+    }
+
+    CATIDocId*       pDocId = NULL;
+    CATUnicodeString documentType;
+    HRESULT          typeResult = pAssembly->GetDocId(&pDocId);
+    if (SUCCEEDED(typeResult) && pDocId != NULL) {
+        typeResult = pDocId->GetType(documentType);
+    }
+    else {
+        typeResult = E_FAIL;
+    }
+    if (pDocId != NULL) {
+        pDocId->Release();
+    }
+    if (FAILED(typeResult)) {
+        ShowCreate3DMessage("The active document's type could not be retrieved.");
+        return CATStatusChangeRCCompleted;
+    }
+    if (documentType != CATUnicodeString("CATProduct")) {
+        ShowCreate3DMessage("Activate a CATProduct document before creating a part.");
+        return CATStatusChangeRCCompleted;
+    }
+
+    CATIProduct_var assemblyRoot = GetRootProduct(pAssembly);
+    if (assemblyRoot == NULL_var) {
+        ShowCreate3DMessage("The active assembly's root product could not be found.");
+        return CATStatusChangeRCCompleted;
+    }
+
+    // The part is displayed through its assembly instance, without a separate window.
     CATDocument* pPart = NULL;
-    HRESULT      hr    = CATDocumentServices::New("CATPart", pPart);
+    HRESULT      hr    = CATDocumentServices::New("Part", pPart);
     if (FAILED(hr) || pPart == NULL) {
         ShowCreate3DMessage("The CATPart could not be created.");
         return CATStatusChangeRCCompleted;
@@ -118,12 +178,59 @@ CATStatusChangeRC Create3DCommand::Activate(CATCommand* iFromClient, CATNotifica
 
     hr = CreateBox(pPart);
     if (FAILED(hr)) {
-        ShowCreate3DMessage("The CATPart was created, but the sample box could not be built.");
+        CATDocumentServices::Remove(*pPart);
+        ShowCreate3DMessage("The sample box could not be built.");
+        return CATStatusChangeRCCompleted;
+    }
+
+    const int       childCountBefore = assemblyRoot->GetChildrenCount();
+    CATIProduct_var instance         = NULL_var;
+    {
+        CATIProduct_var partRoot = GetRootProduct(pPart);
+        if (partRoot != NULL_var) {
+            instance = assemblyRoot->AddProduct(partRoot);
+        }
+    }
+    if (instance == NULL_var) {
+        CATDocumentServices::Remove(*pPart);
+        ShowCreate3DMessage("The part could not be added to the active assembly.");
         return CATStatusChangeRCCompleted;
     }
 
     _pCreatedPart = pPart;
-    ShowCreate3DMessage("A sample 3D box was created.");
+    if (assemblyRoot->GetChildrenCount() != childCountBefore + 1) {
+        ShowCreate3DMessage(
+            "CATIA returned a component, but the assembly child count did not increase.");
+        return CATStatusChangeRCCompleted;
+    }
+
+    // Notify both the 3D representation and the specification tree.
+    CATIModelEvents* pModelEvents = NULL;
+    HRESULT visuResult = assemblyRoot->QueryInterface(IID_CATIModelEvents, (void**)&pModelEvents);
+    if (SUCCEEDED(visuResult) && pModelEvents != NULL) {
+        CATCreate created(instance.operator->(), assemblyRoot.operator->());
+        pModelEvents->Dispatch(created);
+        pModelEvents->Release();
+    }
+    else {
+        visuResult = E_FAIL;
+    }
+
+    CATIRedrawEvent* pRedraw = NULL;
+    HRESULT treeResult       = assemblyRoot->QueryInterface(IID_CATIRedrawEvent, (void**)&pRedraw);
+    if (SUCCEEDED(treeResult) && pRedraw != NULL) {
+        pRedraw->Redraw();
+        pRedraw->Release();
+    }
+    else {
+        treeResult = E_FAIL;
+    }
+
+    if (FAILED(visuResult) || FAILED(treeResult)) {
+        ShowCreate3DMessage(
+            "The assembly contains the new part, but its display could not be refreshed.");
+    }
+    RequestDelayedDestruction();
     return CATStatusChangeRCCompleted;
 }
 
