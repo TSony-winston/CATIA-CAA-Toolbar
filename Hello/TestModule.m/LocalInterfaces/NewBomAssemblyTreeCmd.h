@@ -36,27 +36,13 @@ public:
     NewBomAssemblyTreeCmd();
     virtual ~NewBomAssemblyTreeCmd();
 
-    /**
-     * Activate - Called when command starts
-     * Creates and displays the assembly tree dialog
-     */
     virtual CATStatusChangeRC Activate(CATCommand* iCmd, CATNotification* iNotif);
 
-    /**
-     * CloseDialog - Called when dialog closes
-     * Hides dialog and requests command destruction
-     */
     virtual void CloseDialog(CATCommand* iCmd, CATNotification* iNotif,
                              CATCommandClientData iClientData);
 
-    /**
-     * Desactivate - Called when another command takes focus
-     */
     virtual CATStatusChangeRC Desactivate(CATCommand* iCmd, CATNotification* iNotif);
 
-    /**
-     * Cancel - Called when command is cancelled
-     */
     virtual CATStatusChangeRC Cancel(CATCommand* iCmd, CATNotification* iNotif);
 };
 

@@ -179,7 +179,7 @@ CATStatusChangeRC Create3DCommand::Activate(CATCommand* iFromClient, CATNotifica
     hr = CreateBox(pPart);
     if (FAILED(hr)) {
         CATDocumentServices::Remove(*pPart);
-        ShowCreate3DMessage("The sample box could not be built.");
+        ShowCreate3DMessage("The 3D model could not be built.");
         return CATStatusChangeRCCompleted;
     }
 

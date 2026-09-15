@@ -40,13 +40,12 @@ NewBomAssemblyTreeDlg::~NewBomAssemblyTreeDlg() {}
 // BuildDialog - Create and layout dialog controls
 //=============================================================================
 void NewBomAssemblyTreeDlg::BuildDialog() {
-    // Set dialog title: UCS-2 for Chinese "获取装配树"
-    // 获=0x83B7, 取=0x53D6, 装=0x88F6, 配=0x914D, 树=0x6811
+    // Set dialog title
     SetTitle(U(L"\x83B7\x53D6\x88F6\x914D\x6811"));
 
     // Row 0: Tree control label
     CATDlgLabel* pTreeLabel = new CATDlgLabel(this, "TreeLabel");
-    pTreeLabel->SetTitle(U(L"\x83C5\x914D\x6811\x7ED3\x6784")); // "装配树结构"
+    pTreeLabel->SetTitle(U(L"\x83C5\x914D\x6811\x7ED3\x6784"));
     pTreeLabel->SetGridConstraints(0, 0, 1, 1, CATGRID_LEFT);
 
     // Row 1: Tree control (main content)
@@ -60,7 +59,7 @@ void NewBomAssemblyTreeDlg::BuildDialog() {
     // Row 2: Status label
     m_pStatusLabel = new CATDlgLabel(this, "StatusLabel");
     m_pStatusLabel->SetTitle(
-        U(L"\x51C6\x5907\x83B7\x53D6\x83C5\x914D\x6811...")); // "准备获取装配树..."
+        U(L"\x51C6\x5907\x83B7\x53D6\x83C5\x914D\x6811...")); // 
     m_pStatusLabel->SetGridConstraints(2, 0, 1, 2, CATGRID_CENTER);
 
     // Set column resize properties

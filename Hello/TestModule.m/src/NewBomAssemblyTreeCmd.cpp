@@ -21,7 +21,6 @@ CATCreateClass(NewBomAssemblyTreeCmd);
 //=============================================================================
 NewBomAssemblyTreeCmd::NewBomAssemblyTreeCmd()
     : CATCommand(NULL, "NewBomAssemblyTreeCmd") {
-
     m_pDialog = NULL;
     RequestStatusChange(CATCommandMsgRequestSharedMode);
 }
